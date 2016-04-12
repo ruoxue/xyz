@@ -1,12 +1,8 @@
-package xyz.ruoxue.xyz.ui.fragment;
+package xyz.ruoxue.xyz.bean;
 
-import android.content.Context;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import java.io.Serializable;
+
+import cn.bmob.v3.BmobObject;
 
 // +----------------------------------------------------------------------
 //            -------------------------
@@ -39,28 +35,9 @@ import android.view.ViewGroup;
 // +----------------------------------------------------------------------
 // | Copyright (c) 2016 http://baimifan.cn All rights reserved.
 // +----------------------------------------------------------------------
-// | Author: 李上凡 ruoshuisixue@sina.com  创建时间: 2016/4/12_14:12  包名: xyz.ruoxue.xyz.ui.fragment
+// | Author: 李上凡 ruoshuisixue@sina.com  创建时间: 2016/4/12_10:19  包名: xyz.ruoxue.xyz.bean
 // +----------------------------------------------------------------------
-public class BaseFragment extends Fragment {
+public class BaseBean  extends BmobObject implements Serializable {
 
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
 
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return super.onCreateView(inflater, container, savedInstanceState);
-    }
-
-    @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-    }
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-    }
 }
